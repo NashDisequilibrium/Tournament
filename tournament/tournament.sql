@@ -6,4 +6,9 @@
 -- You can write comments in this file by starting them with two dashes, like
 -- these lines here.
 
+create table players (id serial primary key, name text);
+
+create table matches (winners integer references players(ID), losers integer references players(ID));
+
+create table totalmatches (id integer references players(ID), total integer);	
 
