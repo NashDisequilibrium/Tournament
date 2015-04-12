@@ -2,7 +2,7 @@ Tournament using Swiss pairings
 
 1. All of the operations that can be done within the SQL code are done that way as this speeds up the processes. 
 
-2. tournament.sql includes the SQL information
+2. tournament.sql includes the SQL information. Create database called tournament; all the tables will be inserted into the database tournament.
 
 3. Running tournament.sql will create the necessary tables
 
