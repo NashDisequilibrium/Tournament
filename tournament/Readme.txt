@@ -1,29 +1,37 @@
-Tournament using Swiss pairings
+Tournament Using Swiss Pairings
+-------------------------------
 
-The prerequisites for running this application are Python 2.7 (go to python.org and click to download python 2.7) and PostGRESQL (postgresql.org)
+Requirements:
+-------------
 
-1. All of the operations that can be done within the SQL code are done that way as this speeds up the processes. 
-
-2. tournament.sql includes the SQL information. Create database called tournament; all the tables will be inserted into the database tournament.
-
-3. Running tournament.sql will create the necessary tables
-
-4. You should see that the table are "players", "matches" and "winners"
-
-5. The python file that includes the code for this project is tournament.py
-
-6. There is a file called tournament.sql that includes SQL schema for the tournament 
-
-7. tournament_test.py will delete relevant SQL data after running a relevant test so you do not need to do this manually. 
-
-8. Go to the terminal and run python file tournament_test.py
-
-9. This will show the program tournament.py working with all of the test information
-
-10. You can also enter new names etc ino the test file for further testing
-
-11. The program is designed to be scalable so adding more names to the test file will be fine
-
-12. There is no CSS, GUI etc for this program.  
+VirtualBox
+Vagrant
+Git
+Python 2.7.6
+PostgreSQL 9.3.5
+psycopg2
 
 
+Files Included: 
+---------------
+
+tournament.py
+tournament_test.py
+tournament.sql
+
+
+Instructions:
+--------------
+
+Open the Git Shell
+Run vagrant from the appropriate folder ("vagrant up" and then "vagrant ssh")
+Start PostgreSQL and then create the database "tournament" ("CREATE DATABASE tournament;"). 
+Run tournament.sql which will input the SQL schema
+Run tournament_test.py from the tournament folder
+
+
+Notes:
+-------
+
+The tournament_test.py will delete the contents of the tables before doing a test, so this does not have to be done manually.
+You can enter further names and other information into tournament_test.py to test larger structures. 
