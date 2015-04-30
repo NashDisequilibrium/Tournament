@@ -8,6 +8,9 @@
 
 --Here the table with all of the players is created, it has a unique ID for each of them plus a name (not necessarily unique)
 
+CREATE DATABASE tournament;
+\c tournament
+
 create table players (
 	id serial primary key, 
 	name text);
@@ -18,7 +21,7 @@ create table matches (
 	winners integer references players(ID), 
 	losers integer references players(ID));
 
---The totalmatches table is necessary so that we can perform additional types of computations more efficiently in the SQL code if we need to 
+--The totalmatches table is necessary so that we can perform additional types of computations more efficiently in the SQL code if we ever need to 
 
 create table totalmatches (
 	id integer references players(ID), 
